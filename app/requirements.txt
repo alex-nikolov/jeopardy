@@ -1,6 +1,7 @@
 alembic
 fastapi
 openai
+pandas
 psycopg2-binary
 python-dotenv
 sqlalchemy

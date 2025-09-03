@@ -12,6 +12,6 @@ CREATE TABLE questions (
     round VARCHAR(32) NOT NULL,           -- Round, max 32 characters
     category VARCHAR(64) NOT NULL,        -- Category, max 64 characters
     value INTEGER,                        -- Value of the question
-    question VARCHAR(256) NOT NULL,       -- Question text, max 256 characters
-    answer VARCHAR(64) NOT NULL           -- Answer text, max 64 characters
+    question VARCHAR(1024) NOT NULL,       -- Question text, max 256 characters
+    answer VARCHAR(256) NOT NULL           -- Answer text, max 64 characters
 );
