@@ -1,0 +1,10 @@
+How to install:
+
+docker compose up --build
+docker exec -i jeopardy_db psql -U postgres -c 'CREATE DATABASE "Jeopardy";'
+docker exec -i jeopardy_db psql -U postgres -d Jeopardy < ./create_questions_table.sql
+docker exec -i jeopardy_app python ./data/seed_questions.py
+
+To test the endpoints, go to:
+
+localhost:8030/docs
